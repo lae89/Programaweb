@@ -1,0 +1,53 @@
+body{
+    background-color:orangered;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.adetienda{
+    color: black;
+    text-decoration: none;
+    background-color:#02e1d9;
+    font-weight: bold;
+} 
+
+.adeNosotros{
+    color: blanchedalmond;
+    text-decoration: none;
+    background-color:#02028c;
+    font-weight: bold;
+
+}
+.adeContacto{
+    color: rgb(8, 5, 0);
+    text-decoration: none;
+    background-color:#fcb229;
+    font-weight: bold;
+} 
+
+.adeFundaciones{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    
+}
+.enblanco{
+    background-color: white;
+    font-weight: bold;
+}
+
+.BajadaContacto{
+    background-color:#fcb229;
+}
+
+.Bajadatienda{
+    background-color: rgb(53, 227, 221);
+}
+
+.BajadaNosotros{
+    color:white;
+    font-weight: bold;
+}
+
+

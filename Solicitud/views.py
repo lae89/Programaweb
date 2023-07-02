@@ -41,3 +41,51 @@ def eliminarSolicitud(request, Id):
 
     messages.success(request, '¡Solicitud eliminada!')
     return redirect('/')
+
+def home(request):
+    Inicio = Inicio.objects.all()
+    return render(request, "Inicio.html")
+
+def Bebedero(request):
+    Inicio = Bebedero.objects.all()
+    return render(request, "Bebedero.html")
+
+def Collar(request):
+    Inicio = Collar.objects.all()
+    return render(request, "Collar.html")
+
+def Comida_Gato(request):
+    Comida_Gato = Comida_Gato.objects.all()
+    return render(request, "Comida Gato.html")
+
+def Comida_Perro(request):
+    Comida_Perro = Comida_Perro.objects.all()
+    return render(request, "Comida_Perro.html")
+
+def Contacto(request):
+    Contacto = Contacto.objects.all()
+    return render(request, "Contacto.html")
+
+def Fundaciones(request):
+    Fundaciones = Fundaciones.objects.all()
+    return render(request, "Fundaciones.html")
+
+def Nosotros(request):
+    Nosotros = Nosotros.objects.all()
+    return render(request, "Nosotros.html")
+
+def Registro(request):
+    Registro = Registro.objects.all()
+    return render(request, "Registro.html")
+
+def Tienda_subseccion_accesorios(request):
+    Tienda_subseccion_accesorios = Tienda_subseccion_accesorios.objects.all()
+    return render(request, "Tienda subseccion accesorios.html")
+
+def Tienda_subseccion_alimentos(request):
+    Tienda_subseccion_alimentos = Tienda_subseccion_alimentos.objects.all()
+    return render(request, "Tienda subseccion alimentos.html")
+
+def Tienda(request):
+    Tienda = Tienda.objects.all()
+    return render(request, "Tienda.html")
