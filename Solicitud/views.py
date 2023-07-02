@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .models import Solicitud
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 # Create your views here.
 
@@ -89,3 +91,17 @@ def Tienda_subseccion_alimentos(request):
 def Tienda(request):
     Tienda = Tienda.objects.all()
     return render(request, "Tienda.html")
+
+def login(request):
+    return render(request, 'Solicitud/registracion/Login.html')
+
+@login_required
+def gestionsolicitudes(request):
+    return render(request, 'Solicitud/gestionsolicitudes.html')
+
+def Inicio(request):    
+    return render(request, 'Solicitud/Inicio.html')
+
+def exit(request):
+    logout(request)
+    return redirect('Solicitud/Inicio.html')

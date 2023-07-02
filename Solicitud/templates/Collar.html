@@ -33,9 +33,15 @@
                   <li class="nav-item">
                     <a class="nav-link" href="Contacto.html">Contacto</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Login.html">Login</a>
-                  </li>
+                    {% if request.user.is.authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href={% url 'Exit' %}>Salir</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a id = "saltoLogin" class="nav-link" href={% url 'Login.html' %}>Login</a>
+                    </li>
+                    {% endif %}
                 </ul>
               </div>
             </div>
